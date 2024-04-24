@@ -18,7 +18,7 @@ export default function Navbar() {
 <div className="title container">
   <ul>
     <li>  
-          <h1 className=" left">{t("Header-h")}</h1>
+          <h1 className=" left">{t("academy")}</h1>
     </li>
     <li className="diffrint">
     <marquee direction={i18n.language === 'ar' ? 'right' : 'left'}>
