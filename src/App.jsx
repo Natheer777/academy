@@ -146,7 +146,7 @@ function App() {
         <>
           <Router>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/academy/" element={<Home />} />
             </Routes>
           </Router>
         </>
