@@ -1,0 +1,23 @@
+.container{
+    margin-top: 10vh;
+}
+.vision-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--color--red1);
+    /* margin-bottom: 10px; */
+}
+.vision-title svg{
+    font-size: 30px;
+}
+.vision-details{
+    margin-top: 20px;
+    line-height: 2;
+    /* opacity: 0.9; */
+    font-weight: 500;
+    font-size: 18px;
+}
+.vision-img{
+    width: 100%;
+    margin-top: 10vh;
+}
