@@ -17,16 +17,9 @@ export default function Navbar() {
 <div className="title container">
   <ul>
     <li>  
-          <h1 className=" left">japanese academy</h1>
+          <h1 className=" left">أكاديمية اللغة اليابانية</h1>
     </li>
-    <li className="diffrint">
-    <marquee direction={i18n.language === 'ar' ? 'right' : 'left'}>
-      <h4 className={i18n.language === 'ar' ? 'left' : 'right'}>
-        {t("Header-p")}
-      </h4>
-    </marquee>
 
-    </li>
     <li> <a className="navbar-brand" href="#">
             <img src={Logo} alt="" />
           </a>
