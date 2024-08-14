@@ -4,7 +4,7 @@ import { RiHomeOfficeLine } from "react-icons/ri";
 import { FaMobileAlt } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import logo from "../../assets/Logo/الشعار-2-png.webp";
+import logo from "../../assets/Logo/الشعار-2-png.png";
 import { useTranslation } from "react-i18next";
 export default function Footer() {
   const [t] = useTranslation();

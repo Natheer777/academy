@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Navbar, Header, About , Slogan , Vision, Slogan2, Services, Contact, Footer, Typing} from "../../sections/index";
+import { Navbar, Header, Contact, Footer} from "../../sections/index";
 
 
 export default function Home() {
@@ -11,12 +11,6 @@ export default function Home() {
     
     <Navbar />
       <Header />
-      <Typing />
-      <About />
-      <Slogan />
-      <Vision />
-      <Slogan2 />
-      <Services />
       <Contact />
       <Footer />
     </>

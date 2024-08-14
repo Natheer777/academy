@@ -3,16 +3,12 @@ import {useTranslation} from 'react-i18next'
 import { FaFolderPlus } from "react-icons/fa";
 
 
-import Caontact from "../../assets/Services/اتصل بنا.webp";
 export default function Contact() {
 const [t] = useTranslation()
 
   return (
     <>
       <div className="container mb-5" >
-        <div className="Contact">
-          <img src={Caontact} alt="" />
-        </div>
 
 
         <form method="POST" action="https://formsubmit.co/contact@sawagroup.jp" encType="multipart/form-data" id="Contact">

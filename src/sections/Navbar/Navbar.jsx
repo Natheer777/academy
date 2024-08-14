@@ -1,12 +1,11 @@
 import "./Navbar.css";
 import { useTranslation } from "react-i18next";
-import Logo from "../../assets/Logo/الشعار-2-png.webp";
+import Logo from "../../assets/Logo/الشعار-2-png.png";
 import { FaHome } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
 import {  GrServices } from "react-icons/gr";
 import { FaPhoneAlt } from "react-icons/fa";
 import { LuLanguages } from "react-icons/lu";
-
 
 
 export default function Navbar() {
@@ -18,7 +17,7 @@ export default function Navbar() {
 <div className="title container">
   <ul>
     <li>  
-          <h1 className=" left">{t("academy")}</h1>
+          <h1 className=" left">japanese academy</h1>
     </li>
     <li className="diffrint">
     <marquee direction={i18n.language === 'ar' ? 'right' : 'left'}>

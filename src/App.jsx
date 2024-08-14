@@ -10,7 +10,7 @@ import i18next from "i18next";
 import cookies from "js-cookie";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import Logo from "../src/assets/Logo/الشعار-2-png.webp";
+import Logo from "../src/assets/Logo/الشعار-2-png.png";
 import { FaLine } from "react-icons/fa";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
