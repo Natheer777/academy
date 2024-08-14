@@ -1,15 +1,14 @@
 import "./Navbar.css";
-import { useTranslation } from "react-i18next";
 import Logo from "../../assets/Logo/الشعار-2-png.png";
 import { FaHome } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
 import {  GrServices } from "react-icons/gr";
 import { FaPhoneAlt } from "react-icons/fa";
 import { LuLanguages } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 
 export default function Navbar() {
-  const [t, i18n] = useTranslation();
 
   return (
     <>
@@ -47,23 +46,23 @@ export default function Navbar() {
             <ul className="navbar-nav">
               <li className="nav-item active item1 hidden">
                 <a className="nav-link" href="#">
-                  <FaHome />{t("Navbar-Home")}
+                  <FaHome />الصفحة الرئيسية
                   <span className="sr-only"></span>
                 </a>
               </li>
               <li className="nav-item item2 hidden">
-                <a className="nav-link" href="#about">
-               <IoPerson />   {t("Navbar-about")}
-                </a>
+                <Link className="nav-link" to="/academy/about">
+               <IoPerson />   من نحن ؟
+                </Link>
               </li>
               <li className="nav-item item3 hidden">
                 <a className="nav-link" href="#Services">
-              <GrServices />    {t("Navbar-Services")}
+              <GrServices />    خدمات
                 </a>
               </li>
               <li className="nav-item item4 hidden">
                 <a className="nav-link" href="#Contact">
-               <FaPhoneAlt />   {t("Navbar-contact")}
+               <FaPhoneAlt />   تواصل معنا
                 </a>
               </li>
               <li className="nav-item dropdown item5 hidden">

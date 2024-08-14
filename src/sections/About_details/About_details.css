@@ -1,0 +1,44 @@
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+.icons p svg{
+    font-size: 35px;
+}
+.icons p{
+    border-radius: 50px;
+}
+.icons p:nth-child(1){
+    color: yellow;
+}
+.icons p:nth-child(2){
+    color: black;
+}
+.icons p:nth-child(3){
+    color: rgb(6, 95, 136);
+}
+.icons p:nth-child(4){
+    color: green;
+}
+.icons p:nth-child(5){
+    color: red;
+}
+.icons p:nth-child(6){
+    color: rgb(6, 95, 136);
+}
+.icons p:nth-child(7){
+    color: rgb(71, 71, 197);
+}
+.category{
+    text-align: end;
+}
+.category h3{
+    color: rgb(85, 45, 205);
+}
+.category p{
+    padding-top: 20px;
+}

@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-import { Home } from "./pages/index";
+import { About, Home } from "./pages/index";
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -102,6 +102,7 @@ function App() {
           <Router>
             <Routes>
               <Route path="/academy/" element={<Home />} />
+              <Route path="/academy/About" element={<About />} />
             </Routes>
           </Router>
         </>
