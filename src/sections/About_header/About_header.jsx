@@ -5,7 +5,7 @@ export default function About_header() {
     <div className="Container">
       <div className="content">
         <div className="img">
-            <div className="detailsHeader  m-auto">
+            <div className="detailsHeader col-lg-10  m-auto">
               <h1>تعرف إلينا</h1>
               <p className="mt-3">  Home / تعرف علينا </p>
             </div>

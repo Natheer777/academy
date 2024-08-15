@@ -1,4 +1,4 @@
-import {Navbar , About_header, About_vision ,About_Us , About_details , About_Iso} from "../../sections"
+import {Navbar , About_header, About_vision ,About_Us , About_details , About_Iso, About_pay, About_levels, About_Login, Footer} from "../../sections"
 export default function About() {
   return (
     <>
@@ -8,6 +8,10 @@ export default function About() {
     <About_vision />
     <About_Us />
     <About_Iso />
+    <About_pay />
+    <About_levels />
+    <About_Login />
+    <Footer />
     </>
   )
 }

@@ -8,7 +8,7 @@
     background-color: #f1fffb;
 }
 .detailsHeader{
-    width: 90%;
+    /* width: 100%; */
     text-align: center;
     background-color: rgba(0, 0, 0, 0.378);
     color: white;

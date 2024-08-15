@@ -23,14 +23,14 @@
     text-align: start;
 }
 .Howregister ul li ,.Registertrack ul li{
-    line-height: 3;
+    line-height: 2;
     text-align: start;
     font-size: 15px;
     opacity: 0.9;
 }
 .Howregister ul li svg ,.Registertrack ul li svg{
     margin-left: 10px;
-    color: rgb(244, 254, 56);
+    color: #FFD02C
 }
 .Howregister h4 ,.Registertrack h4 ,.TitleAbout{
     position: relative;

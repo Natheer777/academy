@@ -7,13 +7,13 @@ export default function About_Us() {
       <div className="container">
       <div className="TitleAbout text-center mt-5">
             <h2 className="mb-5 fw-bold">من نحن</h2>
-            <p className="pb-5">
+            <p>
               أكاديميّة افتراضيّة عالمية، متخصّصة في تعليم اللّغة العربيّة،
               بأحدث الطرق والأساليب الإبداعية، مع كادر تعليميّ تربويّ مؤهّل
               مدرّب، تحت إشراف أكاديميّ فعّال.
             </p>
             </div>
-          <div className="options pb-5">
+          <div className="options mb-5 pb-5">
             <ul>
               <li> مسارات الدراسة </li>
               <li> كيف أسجل ابني </li>

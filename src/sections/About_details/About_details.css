@@ -10,7 +10,6 @@
     font-size: 35px;
 }
 .textIcon{
-    /* font-size: 20px; */
     width: 90%;
     padding-top: 20px;
 }
@@ -38,7 +37,12 @@
 .category{
     text-align: start;
 }
+.category h1{
+    font-weight: bold;
+    font-size: 45px;
+}
 .category h3{
+    font-weight: bold;
     color: rgb(85, 45, 205);
 }
 .category p{
