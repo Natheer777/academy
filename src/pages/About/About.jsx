@@ -1,11 +1,13 @@
-import {Navbar , About_header } from "../../sections"
-import About_details from "../../sections/About_details/About_details"
+import {Navbar , About_header, About_vision ,About_Us , About_details , About_Iso} from "../../sections"
 export default function About() {
   return (
     <>
     <Navbar />
     <About_header />
     <About_details />
+    <About_vision />
+    <About_Us />
+    <About_Iso />
     </>
   )
 }

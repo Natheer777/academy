@@ -7,16 +7,17 @@
     background-position: center center;
     background-color: #f1fffb;
 }
-.details{
+.detailsHeader{
+    width: 90%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.378);
     color: white;
 }
-.details h1{
+.detailsHeader h1{
     font-size: 50px;
     padding-top: 20px;
 }
-.details p{
+.detailsHeader p{
     font-size: 20px;
     padding-bottom: 20px;
 }

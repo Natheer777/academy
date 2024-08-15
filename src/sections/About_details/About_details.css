@@ -9,8 +9,10 @@
 .icons p svg{
     font-size: 35px;
 }
-.icons p{
-    border-radius: 50px;
+.textIcon{
+    /* font-size: 20px; */
+    width: 90%;
+    padding-top: 20px;
 }
 .icons p:nth-child(1){
     color: yellow;
@@ -34,11 +36,23 @@
     color: rgb(71, 71, 197);
 }
 .category{
-    text-align: end;
+    text-align: start;
 }
 .category h3{
     color: rgb(85, 45, 205);
 }
 .category p{
     padding-top: 20px;
+    position: relative;
+    padding-right: 20px;
+    width: 90%;
+}
+.category p::after{
+    content: '';
+    width: 3px;
+    bottom: 0;
+    right: 0px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
 }

@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 * {
-  font-family: "Zen Antique", "Vollkorn", "Noto Serif JP", "Scheherazade New",
-    serif;
-  font-weight: 900;
+  /* font-family: 'system-ui'; */
+  font-family: "Almarai", sans-serif;
+  font-weight: bold;
   font-style: normal;
+  direction: rtl;
 }
 .Loading {
   width: 6vh;
@@ -29,7 +31,7 @@
 }
 
 :root {
-  --main--color: #fafafa ;
+  --main--color: white ;
   --color--red1: #4ea550;
   --color--red: #000000;
 }
