@@ -56,9 +56,9 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item item3 hidden">
-                <a className="nav-link" href="#Services">
-              <GrServices />    خدمات
-                </a>
+                <Link className="nav-link" to="/academy/Date">
+              <GrServices />    مواعيد الدروس
+                </Link>
               </li>
               <li className="nav-item item4 hidden">
                 <a className="nav-link" href="#Contact">

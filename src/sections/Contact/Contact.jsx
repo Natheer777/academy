@@ -1,10 +1,8 @@
 import "./Contact.css";
-import {useTranslation} from 'react-i18next'
 import { FaFolderPlus } from "react-icons/fa";
 
 
 export default function Contact() {
-const [t] = useTranslation()
 
   return (
     <>

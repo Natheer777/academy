@@ -1,0 +1,14 @@
+.title_level_one h1 ,.title_level_two h1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.content_level_one ul h3 ,.content_level_two ul h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #4ea550;
+}
+.content_level_one  ul li,.content_level_two ul li{
+    line-height: 2;
+}
