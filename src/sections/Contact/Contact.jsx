@@ -10,18 +10,18 @@ export default function Contact() {
 
 
         <form method="POST" action="https://formsubmit.co/contact@sawagroup.jp" encType="multipart/form-data" id="Contact">
-        <label>{t("Name-form")}</label>
+        <label>Name-form</label>
           <input type="text" name="user_name" required />
-          <label>{t("Email-form")}</label>
+          <label>Email-form</label>
           <input type="email" name="user_email" required/>
-          <label>{t("Phone-form")}</label>
+          <label>Phone-form</label>
           <input type="number" name="user_number" required/>
-          <label>{t("Textarea-form")}</label>
+          <label>Textarea-form</label>
           <textarea name="message"></ textarea>
-          <label>{t("File-form")}</label>
+          <label>File-form</label>
           <label className="btnfolder" htmlFor="btnfolder"><FaFolderPlus /></label>
           <input type="file" className="visb" id="btnfolder" name="attachment" accept="image/png, image/jpeg ,image/jpg ,.xlsx , .pdf ,.docx , .doc "  />
-          <input type="submit" value={t("Send-form")} />
+          <input type="submit" value="Send-form" />
           <input type="hidden" name="_captcha" value="false" />
 </form>
       </div>
