@@ -1,6 +1,18 @@
 import "./Comments.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+// import  { useRef, } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 export default function Comments() {
     const [comments, setComments] = useState([]);
 
@@ -19,15 +31,40 @@ export default function Comments() {
     <>
       <div className="container">
         <h1></h1>
-        <ul>
+        {/* <ul className="comments">
         {comments.map((comment) => (
-          <li key={comment.id}>
+          <li className="Larger shadow " key={comment.id}>
             <p><strong>Name:</strong> {comment.name}</p>
             <p><strong>Country:</strong> {comment.country}</p>
-            <p><strong>Comment:</strong> {comment.comment}</p>
+            <p className="main_comment"><strong>Comment:</strong> {comment.comment}</p>
           </li>
         ))}
-      </ul>
+      </ul> */}
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide> <ul className="comments">
+        {comments.map((comment) => (
+          <li className="Larger shadow " key={comment.id}>
+            <p><strong>Name:</strong> {comment.name}</p>
+            <p><strong>Country:</strong> {comment.country}</p>
+            <p className="main_comment"><strong>Comment:</strong> {comment.comment}</p>
+          </li>
+        ))}
+      </ul></SwiperSlide>
+
+      </Swiper>
       </div>
     </>
   );
