@@ -60,6 +60,10 @@ export default function Navbar() {
               <GrServices />    محتويات الدروس
                 </Link>
               </li>
+              <li className="nav-item item3 hidden">
+                <Link className="nav-link none" to="/academy/Dash">لوحة التحكم
+                </Link>
+              </li>
               <li className="nav-item item4 hidden">
                 <a className="nav-link" href="#Contact">
                <FaPhoneAlt />   تواصل معنا
