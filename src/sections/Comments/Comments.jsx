@@ -95,7 +95,7 @@ export default function Comments() {
     return (
         <>
             <div className="container">
-                <h1>Comments</h1>
+                <h1 className="text-center fw-bold mt-5 mb-5">من آراء الأهالي الكرام في أكاديمية اللغة العربية</h1>
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
@@ -112,11 +112,11 @@ export default function Comments() {
                     className="mySwiper"
                 >
                     {comments.map((comment) => (
-                        <SwiperSlide key={comment.id}>
-                            <li className="Larger shadow">
-                                <p><strong>Name:</strong> {comment.name}</p>
-                                <p><strong>Country:</strong> {comment.country}</p>
-                                <p className="main_comment"><strong>Comment:</strong> {comment.comment}</p>
+                        <SwiperSlide className="comments" key={comment.id}>
+                            <li>
+                                <p className="main_comment shadow"> {comment.comment}</p>
+                                <p className="country">{comment.country}</p>
+                                <p className="name">{comment.name}</p>
                             </li>
                         </SwiperSlide>
                     ))}

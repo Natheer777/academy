@@ -45,10 +45,10 @@ export default function Navbar() {
           >
             <ul className="navbar-nav">
               <li className="nav-item active item1 hidden">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/academy">
                   <FaHome />الصفحة الرئيسية
                   <span className="sr-only"></span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item item2 hidden">
                 <Link className="nav-link" to="/academy/about">
@@ -61,7 +61,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item item3 hidden">
-                <Link className="nav-link none" to="/academy/Dash">لوحة التحكم
+                <Link className="nav-link none" to="/academy/Login" target='_blank'>لوحة التحكم
                 </Link>
               </li>
               <li className="nav-item item4 hidden">

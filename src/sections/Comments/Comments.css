@@ -7,7 +7,7 @@
     
 .comments li{
     width: 20rem;
-    min-height: 30rem;
+    /* min-height: 30rem; */
     padding: 20px;
 }
     /*
@@ -54,4 +54,11 @@
     height: 100%;
     object-fit: cover;
   }
-  
+  .name{
+    color: rgb(100, 100, 255);
+  }
+  .main_comment{
+    border-top: 4px rgb(100, 100, 255) solid;
+    opacity: 0.8;
+    padding: 20px;
+  }

@@ -2,12 +2,13 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-import { About, Dash, Date_lisson, Home } from "./pages/index";
+import { About, Dash, Date_lisson, Home, Login } from "./pages/index";
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Logo from "../src/assets/Logo/الشعار-2-png.png";
 import { FaLine } from "react-icons/fa";
+import ProtectedRoute from "./pages/ProtectedRoute";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 
@@ -67,6 +68,15 @@ function App() {
     setShowIcons(!showIcons);
   };
 
+  ///////////////////
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const auth = localStorage.getItem('isAuthenticated');
+    setIsAuthenticated(auth === 'true');
+  }, []);
+
   return (
     <>
       <div className="social">
@@ -104,7 +114,16 @@ function App() {
               <Route path="/academy/" element={<Home />} />
               <Route path="/academy/About" element={<About />} />
               <Route path="/academy/Date" element={<Date_lisson />} />
-              <Route path="/academy/Dash" element={<Dash/>} />
+              {/* <Route path="/academy/Dash" element={<Dash/>} /> */}
+              <Route path="/academy/Login" element={<Login />} />
+              <Route 
+            path="/academy/Dash" 
+            element={
+              <ProtectedRoute isAuthenticated={isAuthenticated}>
+              {<Dash />}
+              </ProtectedRoute>
+            } 
+          />
             </Routes>
           </Router>
         </>
