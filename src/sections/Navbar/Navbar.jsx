@@ -61,7 +61,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item item3 hidden">
-                <Link className="nav-link none" to="/academy/Login" target='_blank'>لوحة التحكم
+                <Link className="nav-link none" to="/academy/Login">لوحة التحكم
                 </Link>
               </li>
               <li className="nav-item item4 hidden">
