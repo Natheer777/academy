@@ -7,7 +7,7 @@ function LoginPage() {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        const storedUsername = localStorage.getItem('username') || 'sawa';
+        const storedUsername = localStorage.getItem('username') || 'Sawa';
         const storedPassword = localStorage.getItem('password') || 'sawa';
 
         if (username === storedUsername && password === storedPassword) {
