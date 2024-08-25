@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Navbar, Header, Contact, Footer} from "../../sections/index";
+import { Navbar, Contact, Footer} from "../../sections/index";
 
 
 export default function Home() {
@@ -10,7 +10,6 @@ export default function Home() {
     <>
     
     <Navbar />
-      <Header />
       <Contact />
       <Footer />
     </>

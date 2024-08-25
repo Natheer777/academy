@@ -69,50 +69,12 @@ export default function Navbar() {
                <FaPhoneAlt />   تواصل معنا
                 </a>
               </li>
-              <li className="nav-item dropdown item5 hidden">
-                <a
-                  className="nav-link dropdown-toggle fs-5"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                <LuLanguages />{/* {t("Navbar-languages")} */}
-                </a>
-                <div
-                  className="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <a
-                    onClick={() => {
-                      i18n.changeLanguage("ja");
-                    }}
-                    className="dropdown-item"
-                    // href="/#"
-                  >
-                    日本語
-                  </a>
-                  <a
-                    onClick={() => {
-                      i18n.changeLanguage("en");
-                    }}
-                    className="dropdown-item"
-                    // href="/#"
-                  >
-                    English
-                  </a>
-                  <a
-                    onClick={() => {
-                      i18n.changeLanguage("ar");
-                    }}
-                    className="dropdown-item"
-                    // href="/#"
-                  >
-                    العربية
-                  </a>
-                </div>
+              <li className="nav-item item4 hidden">
+                <Link className="nav-link" to="/academy/Questions">
+                    الاسئلة المتكررة              
+                 </Link>
               </li>
+            
             </ul>
           </div>
         </div>

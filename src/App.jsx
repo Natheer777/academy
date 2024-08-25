@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-import { About, Dash, Date_lisson, Home, Login } from "./pages/index";
+import { About, Dash, Date_lisson, Home, Login , Questions } from "./pages/index";
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -114,7 +114,7 @@ function App() {
               <Route path="/academy/" element={<Home />} />
               <Route path="/academy/About" element={<About />} />
               <Route path="/academy/Date" element={<Date_lisson />} />
-              {/* <Route path="/academy/Dash" element={<Dash/>} /> */}
+              <Route path="/academy/Questions" element={<Questions/>} />
               <Route path="/academy/Login" element={<Login />} />
               <Route
           path="/academy/Dash"
