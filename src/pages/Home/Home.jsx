@@ -4,7 +4,7 @@ import { Navbar, Header, Contact, Footer} from "../../sections/index";
 
 export default function Home() {
   useEffect(() =>{
-    document.title = "Sawa Group";
+    document.title = "academy";
   },[])
   return (
     <>

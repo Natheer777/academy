@@ -73,7 +73,7 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    const auth = localStorage.getItem('isAuthenticated');
+    const auth = localStorage.getItem('auth');
     setIsAuthenticated(auth === 'true');
   }, []);
 
@@ -116,15 +116,14 @@ function App() {
               <Route path="/academy/Date" element={<Date_lisson />} />
               {/* <Route path="/academy/Dash" element={<Dash/>} /> */}
               <Route path="/academy/Login" element={<Login />} />
-              <Route 
-            path="/academy/Dash" 
-            element={
-              <ProtectedRoute isAuthenticated={isAuthenticated}>
-              {<Dash />}
-              </ProtectedRoute>
-            } 
-          />
-            </Routes>
+              <Route
+          path="/academy/Dash"
+          element={
+            <ProtectedRoute isAuthenticated={isAuthenticated}>
+              <Dash />
+            </ProtectedRoute>
+          }
+        />            </Routes>
           </Router>
         </>
       )}
