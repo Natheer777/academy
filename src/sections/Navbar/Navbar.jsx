@@ -65,9 +65,9 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item item4 hidden">
-                <a className="nav-link" href="#Contact">
-               <FaPhoneAlt />   تواصل معنا
-                </a>
+                <Link className="nav-link" to="/academy/Articles">
+                        المقالات
+                </Link>
               </li>
               <li className="nav-item item4 hidden">
                 <Link className="nav-link" to="/academy/Questions">

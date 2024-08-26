@@ -2,7 +2,15 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-import { About, Dash, Date_lisson, Home, Login , Questions } from "./pages/index";
+import {
+  About,
+  Dash,
+  Date_lisson,
+  Home,
+  Login,
+  Questions,
+  Articles,
+} from "./pages/index";
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -11,12 +19,8 @@ import { FaLine } from "react-icons/fa";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
-
 function App() {
-
-
-
-/////////////////////////////////////////////
+  /////////////////////////////////////////////
 
   /////////////////////////////////////////////
   useEffect(() => {
@@ -49,7 +53,6 @@ function App() {
     });
   }, []);
 
-
   ////////////////////////////////////
 
   const [loading, setLoading] = useState(false);
@@ -73,8 +76,8 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    const auth = localStorage.getItem('auth');
-    setIsAuthenticated(auth === 'true');
+    const auth = localStorage.getItem("auth");
+    setIsAuthenticated(auth === "true");
   }, []);
 
   return (
@@ -114,16 +117,18 @@ function App() {
               <Route path="/academy/" element={<Home />} />
               <Route path="/academy/About" element={<About />} />
               <Route path="/academy/Date" element={<Date_lisson />} />
-              <Route path="/academy/Questions" element={<Questions/>} />
+              <Route path="/academy/Questions" element={<Questions />} />
               <Route path="/academy/Login" element={<Login />} />
+              <Route path="/academy/Articles" element={<Articles />} />
               <Route
-          path="/academy/Dash"
-          element={
-            <ProtectedRoute isAuthenticated={isAuthenticated}>
-              <Dash />
-            </ProtectedRoute>
-          }
-        />            </Routes>
+                path="/academy/Dash"
+                element={
+                  <ProtectedRoute isAuthenticated={isAuthenticated}>
+                    <Dash />
+                  </ProtectedRoute>
+                }
+              />{" "}
+            </Routes>
           </Router>
         </>
       )}
