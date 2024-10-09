@@ -3,8 +3,6 @@ import Logo from "../../assets/Logo/الشعار-2-png.png";
 import { FaHome } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
 import {  GrServices } from "react-icons/gr";
-import { FaPhoneAlt } from "react-icons/fa";
-import { LuLanguages } from "react-icons/lu";
 import { Link } from "react-router-dom";
 
 
@@ -72,6 +70,36 @@ export default function Navbar() {
               <li className="nav-item item4 hidden">
                 <Link className="nav-link" to="/academy/Questions">
                     الاسئلة المتكررة              
+                 </Link>
+              </li>
+              <li className="nav-item item4 hidden">
+                <Link className="nav-link" to="/academy/Level_division">
+                    تقسيم المستويات            
+                 </Link>
+              </li>
+              <li className="nav-item item4 hidden">
+                <Link className="nav-link" to="/academy/Register">
+                  طريقة التسجيل           
+                 </Link>
+              </li>
+              <li className="nav-item item4 hidden">
+                <Link className="nav-link" to="/academy/Teachers">
+                التعريف بالأساتذة        
+                 </Link>
+              </li>
+              <li className="nav-item item4 hidden">
+                <Link className="nav-link" to="/academy/Study_materials">
+               المواد الدراسية      
+                 </Link>
+              </li>
+              <li className="nav-item item4 hidden">
+                <Link className="nav-link" to="/academy/More_services">
+        خدمات إاضافية    
+                 </Link>
+              </li>
+              <li className="nav-item item4 hidden">
+                <Link className="nav-link" to="/academy/Support">
+       الدعم الفني  
                  </Link>
               </li>
             

@@ -18,3 +18,12 @@ export {default as Header_Questions} from './Header_Questions/Header_Questions'
 export {default as Questions_details} from './Questions_details/Questions_details'
 export {default as Articles_header} from './Articles_header/Articles_header'
 export {default as Articles_all_sections} from './Articles_all_sections/Articles_all_sections'
+export {default as Header} from './Header/Header'
+export {default as Register_header} from './Register_header/Register_header'
+export {default as Date_lisson_Header} from './Date_lisson_Header/Date_lisson_Header'
+export {default as Our_Teachers} from './Our_Teachers/Our_Teachers'
+export {default as Our_Study_materials} from './Our_Study_materials/Our_Study_materials'
+export {default as More_Services} from './More_Services/More_Services'
+export {default as Supports} from './Supports/Supports'
+
+

@@ -10,6 +10,12 @@ import {
   Login,
   Questions,
   Articles,
+  Level_division,
+  Register,
+  Teachers,
+  Study_materials,
+  More_services,
+  Support
 } from "./pages/index";
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -120,6 +126,13 @@ function App() {
               <Route path="/academy/Questions" element={<Questions />} />
               <Route path="/academy/Login" element={<Login />} />
               <Route path="/academy/Articles" element={<Articles />} />
+              <Route path="/academy/Level_division" element={<Level_division />} />
+              <Route path="/academy/Register" element={<Register />} />
+              <Route path="/academy/Teachers" element={<Teachers />} />
+              <Route path="/academy/Study_materials" element={<Study_materials />} />
+              <Route path="/academy/More_services" element={<More_services />} />
+              <Route path="/academy/Support" element={<Support />} />
+              
               <Route
                 path="/academy/Dash"
                 element={

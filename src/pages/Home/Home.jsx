@@ -1,17 +1,16 @@
 import { useEffect } from "react";
-import { Navbar, Contact, Footer} from "../../sections/index";
-
+import { Navbar, Header , Contact, Footer } from "../../sections/index";
 
 export default function Home() {
-  useEffect(() =>{
+  useEffect(() => {
     document.title = "academy";
-  },[])
+  }, []);
   return (
     <>
-    
-    <Navbar />
+      <Navbar />
+      <Header />
       <Contact />
       <Footer />
     </>
-  )
+  );
 }
