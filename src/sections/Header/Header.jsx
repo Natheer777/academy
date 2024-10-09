@@ -1,4 +1,5 @@
 import "./Header.css";
+import learn_img from '../../assets/imgheader/R (1).jpg'
 export default function Header() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Header() {
           أصليين باللغتين اليابانية والعربية، مما يوفر لك تعلمًا ممتعًا وسلسًا
           يجمع بين الدقة اللغوية والتواصل الثقافي.
         </div>
+        <img className="learn_img w-75 m-auto d-flex mt-4" src={learn_img} alt="" />
         <div className="title mt-5 mb-3">رسالة الأكاديمية ورؤيتها:</div>
         <div className="details">
           نسعى إلى تمكين الطلاب العرب من التواصل بثقة واحترافية باللغة اليابانية

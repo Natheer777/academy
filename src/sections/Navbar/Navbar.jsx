@@ -58,20 +58,20 @@ export default function Navbar() {
               <GrServices />    محتويات الدروس
                 </Link>
               </li>
-              <li className="nav-item item3 hidden">
+              {/* <li className="nav-item item3 hidden">
                 <Link className="nav-link none" to="/academy/Login">لوحة التحكم
                 </Link>
-              </li>
-              <li className="nav-item item4 hidden">
+              </li> */}
+              {/* <li className="nav-item item4 hidden">
                 <Link className="nav-link" to="/academy/Articles">
                         المقالات
                 </Link>
-              </li>
-              <li className="nav-item item4 hidden">
+              </li> */}
+              {/* <li className="nav-item item4 hidden">
                 <Link className="nav-link" to="/academy/Questions">
                     الاسئلة المتكررة              
                  </Link>
-              </li>
+              </li> */}
               <li className="nav-item item4 hidden">
                 <Link className="nav-link" to="/academy/Level_division">
                     تقسيم المستويات            

@@ -1,7 +1,8 @@
 .Header ,.title{
     text-align: right;
-    font-size: 30px;
+    font-size: 25px;
 }
 .Header ,.details{
+    font-weight: normal;
     font-size: 20px;
 }

@@ -4,14 +4,14 @@ export default function Date_lisson_Header() {
     <>
       <div className="container Date_lisson_Header">
         <div className="title">تقسيم المستويات:</div>
-        <div className="details">
+        <div className="details fw-bold mt-3">
           نحن نقدم مسارًا متدرجًا يتيح لك الانتقال بسلاسة من المبتدئ إلى
           الاحتراف، مع مراعاة احتياجات كل طالب وتوفير برامج مصممة خصيصًا لتلبي
           تطلعاتك اللغوية.
         </div>
-        <div className="levels">
+        <div className="levels mt-5">
           <ul>
-            <h3 className="fw-bold mt-5">المستوى المبتدئ (N5):</h3>
+            <h3 className="fw-bold mt-4">المستوى المبتدئ (N5):</h3>
             <p>
               في هذا المستوى، ستركز على أساسيات اللغة اليابانية، بما في ذلك تعلم
               حروف الهيراغانا والكاتاكانا، وبعض الكانجي الأساسية. سيتم تقديمك
@@ -26,7 +26,7 @@ export default function Date_lisson_Header() {
             <li>جلسات حوار بسيطة (مع تطبيقات عملية).</li>
           </ul>
           <ul>
-            <h3 className="fw-bold mt-5">المستوى المتوسط (N4):</h3>
+            <h3 className="fw-bold mt-4">المستوى المتوسط (N4):</h3>
             <p>
               هنا تتوسع في قواعد اللغة وتتعمق في تعلم حروف الكانجي الأكثر
               تعقيدًا. ستتعلم تكوين جمل أكثر تعقيدًا وستبدأ في استخدام اللغة في
@@ -40,7 +40,7 @@ export default function Date_lisson_Header() {
             <li>تدريبات تفاعلية على الحوار اليومي.</li>
           </ul>
           <ul>
-            <h3 className="fw-bold mt-5">المستوى المتقدم (N3):</h3>
+            <h3 className="fw-bold mt-4">المستوى المتقدم (N3):</h3>
             <p>
               في هذا المستوى، يتم التركيز على تطوير مهارات الاستماع والقراءة
               بشكل أكبر، مما يساعدك على التعامل مع نصوص ومحادثات أكثر تعقيدًا.
@@ -55,7 +55,7 @@ export default function Date_lisson_Header() {
             <li>جلسات نقاش مفتوحة.</li>
           </ul>
           <ul>
-            <h3 className="fw-bold mt-5"> المستوى المتقدم جدًا (N2):</h3>
+            <h3 className="fw-bold mt-4"> المستوى المتقدم جدًا (N2):</h3>
             <p>
               يُعد هذا المستوى نقلة نوعية حيث ستركز على المفردات المتخصصة وتطوير
               قدرتك على التفاعل في بيئات عمل يابانية. ستتعلم كيف تكتب رسائل
@@ -68,7 +68,7 @@ export default function Date_lisson_Header() {
             <li> محادثات يومية ومهنية مع اليابانيين.</li>
           </ul>
           <ul>
-            <h3 className="fw-bold mt-5">المستوى الاحترافي (N1):</h3>
+            <h3 className="fw-bold mt-4">المستوى الاحترافي (N1):</h3>
             <p>
               هذا هو مستوى الإتقان، حيث ستتمكن من فهم اللغة اليابانية بشكل شامل
               واستخدامها بطلاقة في البيئات الأكاديمية والمهنية المعقدة. ستكون
@@ -83,8 +83,8 @@ export default function Date_lisson_Header() {
             <li> تحليل نصوص أدبية يابانية قديمة وحديثة.</li>
           </ul>
         </div>
-        <div className="register_lisson">
-          <h3 className="fw-bold mt-5">الرسوم:</h3>
+        <div className="money_lisson">
+          <h3 className="fw-bold mt-4">الرسوم:</h3>
           <p>
             نعمل على توفير برامج تعليمية متنوعة تلبي احتياجات مختلف المستويات،
             مع مراعاة توفير حزم مرنة للطلاب. يمكنك اختيار الدفع لكل دورة أو
@@ -112,7 +112,7 @@ export default function Date_lisson_Header() {
             </li>
           </ul>
           <p>
-            ملاحظة: تتضمن جميع الرسوم الوصول إلى المواد الدراسية الرقمية،
+            <span>ملاحظة: </span> تتضمن جميع الرسوم الوصول إلى المواد الدراسية الرقمية،
             التمارين التفاعلية، والدعم المباشر مع الأساتذة.
           </p>
         </div>
