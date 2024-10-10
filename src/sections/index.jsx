@@ -26,5 +26,6 @@ export {default as Our_Study_materials} from './Our_Study_materials/Our_Study_ma
 export {default as More_Services} from './More_Services/More_Services'
 export {default as Supports} from './Supports/Supports'
 export {default as Fees_material} from './Fees_material/Fees_material'
+export {default as Register_account} from './Register_account/Register_account'
 
 

@@ -1,8 +1,8 @@
 import "./Navbar.css";
 import Logo from "../../assets/Logo/الشعار-2-png.png";
 import { FaHome } from "react-icons/fa";
-import { IoPerson } from "react-icons/io5";
-import { GrServices } from "react-icons/gr";
+// import { IoPerson } from "react-icons/io5";
+// import { GrServices } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { HiChevronDoubleDown } from "react-icons/hi";
 
@@ -50,7 +50,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item item3 hidden">
               <Link className="nav-link" to="/academy/Fees">
-           الرسوم
+                الرسوم
               </Link>
             </li>
             <li className="nav-item item4 hidden">
@@ -108,7 +108,9 @@ export default function Navbar() {
           </ul>
           <div className="buttons">
             <button className="login_nav">تسجيل الدخول</button>
-            <button className="register_nav">سجل الان</button>
+            <Link to="/academy/Register_account">
+              <button className="register_nav">سجل الان</button>
+            </Link>
           </div>
         </div>
       </nav>

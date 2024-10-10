@@ -26,6 +26,7 @@ import Logo from "../src/assets/Logo/الشعار-2-png.png";
 import { FaLine } from "react-icons/fa";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import {Register_account} from './sections/index'
 
 function App() {
   /////////////////////////////////////////////
@@ -137,6 +138,7 @@ function App() {
                 <Route path="/academy/More_services" element={<More_services />} />
                 <Route path="/academy/Support" element={<Support />} />
                 <Route path="/academy/Fees" element={<Fees />} />
+                <Route path="/academy/Register_account" element={<Register_account />} />
                 <Route
                   path="/academy/Dash"
                   element={
