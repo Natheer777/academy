@@ -18,6 +18,7 @@ import {
   Support,
   Fees
 } from "./pages/index";
+import Curtain  from './components/Curtain/Curtain'
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -28,7 +29,15 @@ import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 function App() {
   /////////////////////////////////////////////
+  const [isLoaded, setIsLoaded] = useState(false); // حالة التحكم في عرض الموقع
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true); // تفعيل الموقع بعد انتهاء الرسوم المتحركة
+    }, 1500); // بعد انتهاء الرسوم المتحركة (مثال: بعد 2 ثانية)
+
+    return () => clearTimeout(timer); // تنظيف المؤقت
+  }, []);
   /////////////////////////////////////////////
   useEffect(() => {
     setInterval(() => {
@@ -81,66 +90,68 @@ function App() {
 
   return (
     <>
-      <div className="social">
-        <ul onClick={toggleIcons} style={{ cursor: "pointer" }}>
-          <li className="click">
-            <IoChatbubbleEllipsesOutline />
-          </li>
-          {showIcons && (
-            <>
-              <li className="line top">
-                <a href="https://line.me/ti/p/IuAqVt59QV">
-                  <FaLine />
-                </a>
-              </li>
-              <li className="email top">
-                <a href="mailto:contact@sawagroup.jp">
-                  <MdEmail />
-                </a>
-              </li>
-              <li className="whatsapp top">
-                <a href="https://wa.link/mr0gya">
-                  <FaWhatsapp />
-                </a>
-              </li>
-            </>
-          )}
-        </ul>
-      </div>
-      {loading ? (
-        <img className="Loading" src={Logo} alt="" />
-      ) : (
+      {!isLoaded && <Curtain />} 
+      {isLoaded && (
         <>
-          <Router>
-            <Routes>
-              <Route path="/academy/" element={<Home />} />
-              <Route path="/academy/About" element={<About />} />
-              <Route path="/academy/Date" element={<Date_lisson />} />
-              <Route path="/academy/Questions" element={<Questions />} />
-              <Route path="/academy/Login" element={<Login />} />
-              <Route path="/academy/Articles" element={<Articles />} />
-              <Route path="/academy/Level_division" element={<Level_division />} />
-              <Route path="/academy/Register" element={<Register />} />
-              <Route path="/academy/Teachers" element={<Teachers />} />
-              <Route path="/academy/Study_materials" element={<Study_materials />} />
-              <Route path="/academy/More_services" element={<More_services />} />
-              <Route path="/academy/Support" element={<Support />} />
-              <Route path="/academy/Fees" element={<Fees />} />
-              
-              <Route
-                path="/academy/Dash"
-                element={
-                  <ProtectedRoute isAuthenticated={isAuthenticated}>
-                    <Dash />
-                  </ProtectedRoute>
-                }
-              />{" "}
-            </Routes>
-          </Router>
+          <div className="social">
+            <ul onClick={toggleIcons} style={{ cursor: "pointer" }}>
+              <li className="click">
+                <IoChatbubbleEllipsesOutline />
+              </li>
+              {showIcons && (
+                <>
+                  <li className="line top">
+                    <a href="https://line.me/ti/p/IuAqVt59QV">
+                      <FaLine />
+                    </a>
+                  </li>
+                  <li className="email top">
+                    <a href="mailto:contact@sawagroup.jp">
+                      <MdEmail />
+                    </a>
+                  </li>
+                  <li className="whatsapp top">
+                    <a href="https://wa.link/mr0gya">
+                      <FaWhatsapp />
+                    </a>
+                  </li>
+                </>
+              )}
+            </ul>
+          </div>
+          {loading ? (
+            <img className="Loading" src={Logo} alt="" />
+          ) : (
+            <Router>
+              <Routes>
+                <Route path="/academy/" element={<Home />} />
+                <Route path="/academy/About" element={<About />} />
+                <Route path="/academy/Date" element={<Date_lisson />} />
+                <Route path="/academy/Questions" element={<Questions />} />
+                <Route path="/academy/Login" element={<Login />} />
+                <Route path="/academy/Articles" element={<Articles />} />
+                <Route path="/academy/Level_division" element={<Level_division />} />
+                <Route path="/academy/Register" element={<Register />} />
+                <Route path="/academy/Teachers" element={<Teachers />} />
+                <Route path="/academy/Study_materials" element={<Study_materials />} />
+                <Route path="/academy/More_services" element={<More_services />} />
+                <Route path="/academy/Support" element={<Support />} />
+                <Route path="/academy/Fees" element={<Fees />} />
+                <Route
+                  path="/academy/Dash"
+                  element={
+                    <ProtectedRoute isAuthenticated={isAuthenticated}>
+                      <Dash />
+                    </ProtectedRoute>
+                  }
+                />
+              </Routes>
+            </Router>
+          )}
         </>
       )}
     </>
-  );
+    );
 }
 
 export default App;
