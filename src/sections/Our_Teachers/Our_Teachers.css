@@ -1,6 +1,7 @@
 .Our_Teachers h3{
-    color: var(--color--red1);
+    color: var(--color--green);
     font-weight: bold;
+    text-align: center;
 }
 .Our_Teachers ul{
     padding-left: 0;

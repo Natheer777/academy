@@ -1,6 +1,7 @@
-.navbar-brand img{
-    width: 15vh;
+ .navbar-brand img{
+    width: 11vh;
 }
+    /*
 .container-fluid{
     background-color: var(--main--color);
     z-index: 10;
@@ -88,4 +89,39 @@ justify-content: center;
     padding: 1.5vh;
     color: #b38628;
     border-radius: 50px;
+} */
+
+.navbar ul li a svg{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: var(--color--green);
+}
+.navbar ul li a{
+    color: var(--green_blue);
+}
+.navbar-collapse ,.collapse ,.show{
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+.navbar button{
+    justify-content: end;
+}
+.register_nav{
+    background-color: var(--color--green);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin-right: 10px;
+}
+.login_nav{
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    color: var(--color--green);
+}
+.dropdown-toggle::after{
+    display: none;
 }

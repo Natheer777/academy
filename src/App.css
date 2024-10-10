@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap'); */
+@import url("http://www.fontstatic.com/f=sky-bold,sky");
+
+
+
 * {
-  /* font-family: 'system-ui'; */
-  font-family: "Almarai", sans-serif;
+  font-family: 'sky';
   font-weight: bold;
   font-style: normal;
   direction: rtl;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body{
+  background: linear-gradient(to right, #f9f9f9, #e1f2e7);
+
 }
 .Loading {
   width: 6vh;
@@ -37,9 +45,15 @@
   --main--color: white ;
   --color--red1: #4ea550;
   --color--red: #000000;
+  --color--green:#308A69;
+  --dark_green: #245056;
+    --light--green: #267d3d;
+    --green_blue: #00363B;
+    --light_gray: #F6F6F6;
+    --dark_gray: #555;
+    --black: #000;
 }
 div#root {
-  background-color: var(--main--color);
 }
 /* .left {
   opacity: 0;

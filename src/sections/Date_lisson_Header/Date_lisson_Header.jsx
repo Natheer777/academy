@@ -3,7 +3,7 @@ export default function Date_lisson_Header() {
   return (
     <>
       <div className="container Date_lisson_Header">
-        <div className="title">تقسيم المستويات:</div>
+        <div className="title_Date_lisson_Header">تقسيم المستويات:</div>
         <div className="details fw-bold mt-3">
           نحن نقدم مسارًا متدرجًا يتيح لك الانتقال بسلاسة من المبتدئ إلى
           الاحتراف، مع مراعاة احتياجات كل طالب وتوفير برامج مصممة خصيصًا لتلبي

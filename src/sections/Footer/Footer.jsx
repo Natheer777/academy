@@ -8,7 +8,7 @@ import logo from "../../assets/Logo/الشعار-2-png.png";
 export default function Footer() {
   return (
     <>
-      <footer className="footer">
+      {/* <footer className="footer">
         <MDBFooter
           bgColor="bg-secondary"
           className="text-white text-center text-lg-left"
@@ -75,7 +75,107 @@ export default function Footer() {
             </a>
           </div>
         </MDBFooter>
-      </footer>
+      </footer> */}
+
+
+
+
+
+
+
+
+
+
+
+<footer className="text-right pt-70 footer">
+<div className="container">
+<div className="row">
+<div className="col-md-4 col-sm-4 col-12">
+<div className="footerLogo">
+<a href="index.php">
+<img src={logo} alt="Logo" className="d-inline-block align-text-top" />
+</a>
+</div>
+</div>
+<div className="col-md-3 col-sm-4 col-xs-6 desktop">
+<h4 className="fw-600 text-green-dark">
+ترميز المالية </h4>
+<div className="mt-3">
+<h6 className="mb-3 fz-15 fw-200 level_1">
+<a href="https://tarmeez.co//contacts" target="_self">
+تواصل معنا </a>
+</h6>
+<h6 className="mb-3 fz-15 fw-200 level_1">
+<a href="https://tarmeez.co/sharia-committee" target="_self">
+اللجنة الشرعية </a>
+</h6>
+<h6 className="mb-3 fz-15 fw-200 level_1">
+<a href="https://tarmeez.co/career" target="_self">
+انضم للفريق </a>
+</h6>
+<h6 className="mb-3 fz-15 fw-200 level_1">
+<a href="https://tarmeez.co/terms-conditions" target="_self">
+الشروط والأحكام </a>
+</h6>
+</div>
+</div>
+<div className="col-md-3 col-sm-4 col-xs-6 mobile">
+<div className="mt-3">
+<h6 className="mb-3 fz-15 fw-200 level_1">
+<a href="https://tarmeez.co//contacts" target="_self">
+تواصل معنا </a>
+</h6>
+<h6 className="mb-3 fz-15 fw-200 level_1">
+<a href="https://tarmeez.co/faq" target="_self">
+الاسئلة الشائعة </a>
+</h6>
+<h6 className="mb-3 fz-15 fw-200 level_1">
+<a href="https://tarmeez.co/career" target="_self">
+انضم للفريق </a>
+</h6>
+<h6 className="mb-3 fz-15 fw-200 level_1">
+<a href="https://tarmeez.co/terms-conditions" target="_self">
+الشروط والأحكام </a>
+</h6>
+</div>
+</div>
+<div className="col-md-2 col-12 d-none d-md-block">
+<h4 className="fw-600 text-green-dark">المنتج</h4>
+<div className="mt-3">
+<h6 className="mb-3 fz-15 fw-200 level_1">
+<a href="https://tarmeez.co//contacts" target="_self">
+مركز المساعدة </a>
+</h6>
+<h6 className="mb-3 fz-15 fw-200 level_1">
+<a href="https://tarmeez.co/faq" target="_self">
+الاسئلة الشائعة </a>
+</h6>
+<h6 className="mb-3 fz-15 fw-200 level_1">
+<a href="https://tarmeez.co/سياسة-الخصوصية" target="_parent">
+سياسة الخصوصية </a>
+</h6>
+</div>
+</div>
+<div className="col-md-3 col-sm-4 col-xs-6">
+<div className="footer-4-content">
+<h6>رقم التواصل</h6>
+<h6><i className="fa-solid fa-phone"></i><a href="tel:011 834 9687"> 011 834 9687</a></h6>
+<p>ساعات العمل الرسمية تبدأ من الأحد حتى الخميس من الساعة 9 صباحًا إلى 4 مساءًا.</p>
+<div className="social-menu mb-3">
+<ul>
+<li><a href="https://instagram.com/tarmeez_capital?igshid=MzRlODBiNWFlZA==" target="blank"><i className="fab fa-instagram"></i></a></li>
+<li><a href="https://twitter.com/tarmeez_capital"><i className="fa-brands fa-x-twitter"></i></a></li>
+<li><a href="https://www.linkedin.com/company/tarmeez-capital/" target="blank"><i className="fab fa-linkedin-in"></i></a></li>
+</ul>
+</div>
+</div> </div>
+</div>
+<div className="text-right footer-notice">
+<p>إشعار المخاطر: يعد الاستثمار في الأوراق المالية استثمارًا عالي المخاطر، ولا يدخل تحت مسؤولية شركة ترميز ضمانها أو التأمين عليها بأي شكل من الأشكال ويجب أن يقرّ المستخدم لمنصة ترميز أن استثماره عرضة لجميع أنواع المخاطر بشكل كامل أو جزئي وأن استثماره يعد خاضعًا لقيود محددة من حيث مدته وإمكانية بيعه أو تسييله. ويدرك بأن دور منصة ترميز مقتصر على عرض طلبات التمويل بعد مراجعتها وتقييمها وعرضها على المستثمرين بما يتفق مع متطلبات هيئة السوق المالية.</p> </div>
+</div>
+</footer>
+
+
     </>
   );
 }
