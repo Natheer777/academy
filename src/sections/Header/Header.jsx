@@ -6,8 +6,8 @@ export default function Header() {
   return (
     <>
       <div className="container Header">
-        <div className="academy pb-4 pt-4 mt-4">
-        <div className="acadeny_logo mb-4">
+        <div className="academy pb-4 pt-4 mt-4 left">
+        <div className="acadeny_logo mb-4 ">
         <h2 className=" left">أكاديمية اللغة اليابانية</h2>
 
           {/* <img src={Logo} alt="" /> */}
@@ -23,7 +23,7 @@ export default function Header() {
           يجمع بين الدقة اللغوية والتواصل الثقافي.
         </div>
         </div>
-        <div className="academy mt-5 mb-5">
+        <div className="academy mt-5 mb-5 right">
 
         <div className="title_academy mb-3">رسالة الأكاديمية ورؤيتها:</div>
         <div className="details">

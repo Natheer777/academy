@@ -35,21 +35,7 @@ justify-content: center;
     margin-left: 10px;
     color: var(--color--red1);
 }
-.item1{
-    transition-delay: 100ms;
-}
-.item2{
-    transition-delay: 200ms;
-}
-.item3{
-    transition-delay: 300ms;
-}
-.item4{
-    transition-delay: 400ms;
-}
-.item5{
-    transition-delay: 500ms;
-}
+
 
 
 .dropdown-menu[data-bs-popper]{
@@ -90,7 +76,33 @@ justify-content: center;
     color: #b38628;
     border-radius: 50px;
 } */
-
+.item1{
+    transition-delay: 100ms;
+}
+.item2{
+    transition-delay: 200ms;
+}
+.item3{
+    transition-delay: 300ms;
+}
+.item4{
+    transition-delay: 400ms;
+}
+.item5{
+    transition-delay: 500ms;
+}
+.item6{
+    transition-delay: 600ms;
+}
+.item7{
+    transition-delay: 700ms;
+}
+.item8{
+    transition-delay: 800ms;
+}
+.item9{
+    transition-delay: 900ms;
+}
 .navbar ul li a svg{
     margin-right: 10px;
     margin-left: 10px;
@@ -100,8 +112,8 @@ justify-content: center;
     color: var(--green_blue);
 }
 .navbar-collapse ,.collapse ,.show{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     justify-content: space-between;
 }
 .navbar button{
@@ -112,16 +124,35 @@ justify-content: center;
     border: none;
     padding: 10px;
     border-radius: 20px;
-    color: white;
+    color: #ffffff;
+    width: 20vh;
     margin-right: 10px;
 }
 .login_nav{
     border: none;
     padding: 10px;
+    width: 20vh;
     border-radius: 20px;
     color: white;
     color: var(--color--green);
+    border: 2px solid var(--color--green);
 }
 .dropdown-toggle::after{
     display: none;
+}
+.navbar-toggler{
+    margin-left: 10px;
+}
+.dropdown-menu li{
+    text-align: center;
+    border-bottom: 1px solid green;
+    
+}
+@media screen and (max-width: 990px) {
+    .navbar-collapse li{
+        margin-bottom: 6px;
+    }
+    .buttons{
+        margin-top: 10px;
+    }
 }

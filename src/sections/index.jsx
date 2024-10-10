@@ -25,5 +25,6 @@ export {default as Our_Teachers} from './Our_Teachers/Our_Teachers'
 export {default as Our_Study_materials} from './Our_Study_materials/Our_Study_materials'
 export {default as More_Services} from './More_Services/More_Services'
 export {default as Supports} from './Supports/Supports'
+export {default as Fees_material} from './Fees_material/Fees_material'
 
 

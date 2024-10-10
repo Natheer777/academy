@@ -15,7 +15,9 @@
 }
 body{
   background: linear-gradient(to right, #f9f9f9, #e1f2e7);
-
+}
+.academy ul li::marker{
+  color: transparent;
 }
 .Loading {
   width: 6vh;
@@ -55,7 +57,7 @@ body{
 }
 div#root {
 }
-/* .left {
+ .left {
   opacity: 0;
   filter: blur(4px);
   transform: translateX(-2%);
@@ -82,7 +84,7 @@ div#root {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-} */
+} 
 
 ::-webkit-scrollbar {
   width: 8px;

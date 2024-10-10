@@ -15,7 +15,8 @@ import {
   Teachers,
   Study_materials,
   More_services,
-  Support
+  Support,
+  Fees
 } from "./pages/index";
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -41,20 +42,12 @@ function App() {
         });
       });
 
-      const leftElements = document.querySelectorAll(".left");
-      const rightElements = document.querySelectorAll(".right");
-      const hiddenElements = document.querySelectorAll(".hidden");
-      const topElements = document.querySelectorAll(".top");
-      leftElements.forEach((el) => observer.observe(el));
-      rightElements.forEach((el) => observer.observe(el));
-      hiddenElements.forEach((el) => observer.observe(el));
-      topElements.forEach((el) => observer.observe(el));
+      const Elements = document.querySelectorAll(".left ,.right ,.top ,.hidden");
+      Elements.forEach((el) => observer.observe(el));
+
 
       return () => {
-        leftElements.forEach((el) => observer.unobserve(el));
-        rightElements.forEach((el) => observer.unobserve(el));
-        hiddenElements.forEach((el) => observer.unobserve(el));
-        topElements.forEach((el) => observer.unobserve(el));
+        Elements.forEach((el) => observer.unobserve(el));;
       };
     });
   }, []);
@@ -132,6 +125,7 @@ function App() {
               <Route path="/academy/Study_materials" element={<Study_materials />} />
               <Route path="/academy/More_services" element={<More_services />} />
               <Route path="/academy/Support" element={<Support />} />
+              <Route path="/academy/Fees" element={<Fees />} />
               
               <Route
                 path="/academy/Dash"

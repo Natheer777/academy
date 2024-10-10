@@ -6,14 +6,12 @@ import { GrServices } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { HiChevronDoubleDown } from "react-icons/hi";
 
-
 export default function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light  container">
         <a className="navbar-brand" href="#">
-
-          <img src={Logo} alt="" />         
+          <img src={Logo} alt="" />
         </a>
         <button
           className="navbar-toggler"
@@ -35,14 +33,35 @@ export default function Navbar() {
                 <span className="sr-only"></span>
               </Link>
             </li>
-            <li className="nav-item item2 hidden">
+            {/* <li className="nav-item item2 hidden">
               <Link className="nav-link" to="/academy/about">
                 <IoPerson /> من نحن ؟
               </Link>
-            </li>
-            <li className="nav-item item3 hidden">
+            </li> */}
+            {/* <li className="nav-item item3 hidden">
               <Link className="nav-link" to="/academy/Date">
                 <GrServices /> محتويات الدروس
+              </Link>
+            </li> */}
+            <li className="nav-item item2 hidden">
+              <Link className="nav-link" to="/academy/Level_division">
+                تقسيم المستويات
+              </Link>
+            </li>
+            <li className="nav-item item3 hidden">
+              <Link className="nav-link" to="/academy/Fees">
+           الرسوم
+              </Link>
+            </li>
+            <li className="nav-item item4 hidden">
+              <Link className="nav-link dropdown-item" to="/academy/Register">
+                طريقة التسجيل
+              </Link>
+            </li>
+
+            <li className="nav-item item4 hidden">
+              <Link className="nav-link dropdown-item" to="/academy/Teachers">
+                التعريف بالأساتذة
               </Link>
             </li>
             <li className="nav-item dropdown">
@@ -54,33 +73,12 @@ export default function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-               <HiChevronDoubleDown /> باقي الأقسام 
+                <HiChevronDoubleDown /> باقي الأقسام
               </a>
               <div
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li className="nav-item item4 hidden">
-                  <Link className="nav-link" to="/academy/Level_division">
-                    تقسيم المستويات
-                  </Link>
-                </li>
-                <li className="nav-item item4 hidden">
-                  <Link
-                    className="nav-link dropdown-item"
-                    to="/academy/Register"
-                  >
-                    طريقة التسجيل
-                  </Link>
-                </li>
-                <li className="nav-item item4 hidden">
-                  <Link
-                    className="nav-link dropdown-item"
-                    to="/academy/Teachers"
-                  >
-                    التعريف بالأساتذة
-                  </Link>
-                </li>
                 <li className="nav-item item4 hidden">
                   <Link
                     className="nav-link dropdown-item"
@@ -101,7 +99,7 @@ export default function Navbar() {
                   <Link
                     className="nav-link dropdown-item"
                     to="/academy/Support"
-                    >
+                  >
                     الدعم الفني
                   </Link>
                 </li>
@@ -109,9 +107,8 @@ export default function Navbar() {
             </li>
           </ul>
           <div className="buttons">
-
-      <button className="login_nav">تسجيل الدخول</button>
-      <button className="register_nav">سجل الان</button>
+            <button className="login_nav">تسجيل الدخول</button>
+            <button className="register_nav">سجل الان</button>
           </div>
         </div>
       </nav>
